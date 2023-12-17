@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bodyflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 36px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h5{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+
+.ville{
+    width: 33%;
+    height: 290px;
+    background-color: white;
+    margin: 0 0 1% 0;
+    border-radius: 5px ;
+}
+.ville:hover{
+    background-color: rgb(255, 126, 126);
+    transition: background-color 0.3s;
+    h2{
+        color: white;
+    }
+    h3{
+        color: white;
+    }
+    
+}
+
+.imgville{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.txtville{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 5px 5px;
+}
+.imgville img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sidemenu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: auto;
+    background-color: whitesmoke;
+}
+.sideville{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-bottom: solid 2px #c4d5e4;
+    padding: 9px 0px 9px 0px;
+}
+.sideville:hover{
+    background-color: rgb(255, 126, 126);
+    transition: background-color 0.3s;
+    h1{
+        color: white;
+    }
+}
+@media screen and (max-width:1100px) {
+    .sidemenu{
+    width:25%;
+}
+.menu{
+    width: 75%;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+}
+.ville{
+    height: 220px;
+}
+.sideville{
+    padding: 7px 0px 7px 0px;
+}
+}
+@media screen and (max-width:800px) {
+    .sidemenu{
+    width:30%;
+}
+.menu{
+    width: 70%;
+}
+.ville{
+    height: 120px;
+}
+h1{
+    font-size: 14px;
+}
+h2{
+    font-size: 12px;
+}
+h3{
+    font-size: 8px;
+}
+.sideville{
+    padding: 5px 0px 5px 0px;
+}
+}
+/* css pages supp */
+.behind{
+    display: flex;
+    Z-index:-1;
+    position: fixed;
+    width: 100%;
+}
+.zonetxt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    z-index: 0;
+}
+.zonetxt2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    padding: 10px;
+}
+.widget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 350px;
+    background-color: rgb(255, 110, 110);
+    border-radius: 10px;
+}
+.insta{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.office{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.kilou{
+    width: auto;
+    height:100%;
+}
+@media screen and (max-width:800px){
+    .widget{
+        width: 100%;
+        height: 160px;
+    }
+}
+@media screen and (max-width:1100px){
+    .widget{
+    width: 100%;
+    height: 240px;
+}
+}
+
+.kiloubressom:hover{
+    filter: invert();
+}
